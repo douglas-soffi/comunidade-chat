@@ -54,9 +54,6 @@ body{
 
 .gif{
     width: 125px;
-    position: relative;
-    right: 75%;
-    top: 50%;
 }
 
 .chat-title{
@@ -72,9 +69,14 @@ body{
     color: rgb(255, 0, 0);
 }
 
-audio{
-    position: relative;
-    bottom: -72%;
-    right: -18%;
+.player-song{
     background: #f1f3f4;
+}
+
+.linha-propaganda{
+    height: 250px;
+}
+
+.linha-player{
+    height: 250px;
 }
