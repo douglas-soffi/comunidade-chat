@@ -4,11 +4,11 @@
 }
 
 body{
-    background-image: url(static/img/wallpaper.jpg);
+    /* background-image: url(static/img/wallpaper.jpg);
     background-size: 100%;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     color: ghostwhite !important;
-    font-family: 'Courier New', Courier, monospace !important; 
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 .background-wallpaper{
@@ -19,12 +19,32 @@ body{
     display: block;
 }
 
+@media (max-width: 700px){
+    .background-wallpaper{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        z-index: -99;
+        display: none;
+    }
+}
+
 .background-wallpaper-mobile{
     position: fixed;
     height: 100%;
     width: 100%;
     z-index: -99;
     display: none;
+}
+
+@media ( max-width: 700px){
+    .background-wallpaper-mobile{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        z-index: -99;
+        display: block;
+    }
 }
 
 .header-image{
@@ -34,11 +54,18 @@ body{
 }
 
 .title{
-    margin: 30px;
+    padding: 20px;
     text-align: center;
     font-size: larger;
-    border-bottom: solid 1px ghostwhite;
 }
+
+    .border{
+        height: 1px;
+        background-color: ghostwhite;
+        margin-block-end: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
 
 .sub-title{
     text-align: center;
@@ -61,6 +88,10 @@ body{
     text-decoration: underline;
 }
 
+.chat{
+    margin: 10px;
+}
+
 .staff-chat{
     color: rgb(0, 225, 255);
 }
@@ -79,4 +110,13 @@ body{
 
 .linha-player{
     height: 250px;
+}
+
+.propaganda{
+    text-align: center;
+    align-items: center;
+}
+
+.container{
+    margin: 10px;
 }
